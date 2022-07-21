@@ -1,0 +1,44 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Active</th>
+                <th>CreateAt</th>
+                <th>Description</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>updateAt</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let category of categories">
+                <td>
+                    {{category.active}}
+                </td>
+                <td>
+                    {{category.createAt | date:"dd/MM/YY"}}
+                </td>
+                <td>
+                    {{category.description}}
+                </td>
+                <td>
+                    {{category.name}}
+                </td>
+                <td>
+                    {{category.type!.name}}
+                </td>
+                <td>
+                    {{category.updateAt | date:"dd/MM/YY"}}
+                </td>
+                <td>
+                    <button type="button" [routerLink]="['/category/edit', category.reference!.id]">editar</button>
+                    <button type="button " name="deletr " id="delete " (click)="deleteCategory(category) ">delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <a routerLink="/category/create">crear</a>
+    </div>
+</div>

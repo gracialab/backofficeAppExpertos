@@ -1,0 +1,28 @@
+<div>
+    <h1>{{titulo}}</h1>
+    <form [formGroup]="formCategory">
+        <br>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" formControlName="name">
+        <br><br>
+        <label for="active">Activo</label>
+        <input type="checkbox" id="active" formControlName="active">
+        <br><br>
+        <label for="description">descripcion</label>
+        <br>
+        <textarea style="width: 400px; height: 100px;" formControlName="description">
+        </textarea>
+        <br><br>
+        <label for="category">tipo Categoria</label>
+        <select formControlName="type" name="category" id="category">
+      <option [value]="i" *ngFor="let type of categoryType; let i = index">
+        {{type.name}}
+      </option>
+    </select>
+    </form>
+    <br>
+    <button type="button" (click)="validateAction()">enviar</button>
+    <br><br>
+    <a routerLink="/category/list">list</a>
+
+</div>

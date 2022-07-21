@@ -1,0 +1,62 @@
+.loginGrid{
+    height: 100%;
+
+    ion-row{
+        text-align: -webkit-center;
+
+        ion-title{
+            margin: 40px 10px 15px;
+
+            ion-img{
+                width: fit-content;
+                background-size: cover;
+            }
+        }
+
+
+    }
+    ion-item{
+            margin: 30px 20px 15px;
+            border-bottom: groove;
+        }
+
+        ion-buttons{
+            margin: 30px 20px;
+
+            ion-button{
+                background-color: #E58512;
+                width: 100%;
+                color: white;
+                font-weight: bold;
+                border-radius: 5px;
+                text-transform: uppercase;
+            }
+        }
+}
+
+ion-footer{
+    ion-toolbar{
+        text-align: center;
+
+        ion-text{
+            width: 100%; color: #57C5F6; text-align: center;
+        }
+
+        ion-card{
+            margin: auto;
+            border-color: #6CAFE2;
+            background-color: #6CAFE2;
+            color: white;
+            border-top-left-radius: 15px;
+            text-align: left;
+            font-size: large;
+            padding: 15px;
+            border-top-right-radius: 15px;
+            margin-top: 20px;
+
+            ion-label{
+                margin: 5% 5%;
+            }
+        }
+    }
+}

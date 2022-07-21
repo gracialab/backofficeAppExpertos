@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+.layout-container{
+    padding-top:0 !important;
+}
+
+.content{
+    padding-top: 30px !important;
+}
+
+nb-layout.window-mode .layout nb-layout-header{
+    width: 95%;
+}
+
+.main-container.main-container-fixed{
+    top: 0 !important;
+}
+
+nav{
+    border-radius: 12px;
+}

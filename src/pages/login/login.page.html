@@ -1,0 +1,13 @@
+<div>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <div>
+            <input #UserName formControlName="UserName" placeholder="Tu correo" />
+        </div>
+        <div>
+            <input formControlName="Password" type="password" placeholder="Tu contraseña" />
+        </div>
+        <div>
+            <button expand="block" type="submit">Ingresar</button>
+        </div>
+    </form>
+</div>
